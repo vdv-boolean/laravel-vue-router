@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('cocktails', function (Blueprint $table) {
             $table->id();
+            $table->string('strDrink',50);
+            $table->string('strDrinkThumb',200);
             $table->timestamps();
         });
     }
